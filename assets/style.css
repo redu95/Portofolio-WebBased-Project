@@ -301,6 +301,34 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+
+.see-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.see-more-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff66cc, #9966ff);
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.see-more-btn:hover {
+    background: linear-gradient(45deg, #9966ff, #ff66cc);
+    transform: scale(1.05);
+}
+
+.see-more-btn:active {
+    transform: scale(0.95);
+}
+
 .contact h2{
     margin: 3rem;
 }
