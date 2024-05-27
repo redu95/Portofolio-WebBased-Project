@@ -98,12 +98,21 @@ section{
 
 
 /* Add styles for the theme switch */
+
+.theme-switch-container {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    /* Adjust margin as needed */
+}
+
+
 .theme-switch {
-    width: 100;
-    height: 50;
+    width: 32;
+    height: 16;
     background: #323946;
     appearance: none;
-    border-radius: 160px;
+    border-radius: 16px;
     box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
                 inset 0 8px 8px rgba(0, 0, 0, 0.1),
                 inset 0 -4px 4px rgba(0, 0, 0, 0.1);
@@ -114,14 +123,14 @@ section{
 }
 
 .theme-switch ::before{
-    height: 100;
-    width: 100;
+    height: 16;
+    width: 16;
     position: absolute;
     top: 0;
     left: 0;
     content: "";
     background: linear-gradient(to bottom,#444,#222);
-    border-radius: 100px;
+    border-radius: 16px;
     transform: scale(0.9);
     transition: 0.5s;
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
@@ -137,7 +146,7 @@ section{
 }
 
 .theme-switch:checked::before{
-    left: 160px;
+    left: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1),
         inset 4px 4px rgba(255, 255, 255, 1),
         inset -4px 4px rgba(255, 255, 255, 1);
@@ -147,11 +156,11 @@ section{
 .theme-switch::after{
     content: "";
     position: absolute;
-    height: 100vh;
-    width: 100vw;
+    height: 10vh;
+    width: 10vw;
     background: #2b2b2b;
-    top: 80px;
-    left: 160px;
+    top: 8px;
+    left: 16px;
     z-index: -1;
     transform: translate(-50%, -50%);
     transition: 0.5s;
@@ -160,6 +169,8 @@ section{
 .theme-switch:checked::after{
     background: #f8f8f8;
 }
+
+
 /* Style for moon icon */
 .theme-switch .fas.fa-moon {
     font-size: 24px;
