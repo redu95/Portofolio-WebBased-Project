@@ -11,12 +11,29 @@
     scroll-behavior: smooth;
 }
 
+
+/* Define styles for light mode */
 :root {
-    --bg-color: #000;
-    --second-bg-color:#323946;
-    --textcolor:#fff;
-    --main-color:#ff0077;
+    --bg-color: #e4cce1;
+    /* Change background color to white for lig
+    ht mode */
+    --textcolor: #000;
+    /* Change text color to black for light mode */
+    --second-bg-color: #e293fa;
+    --main-color: #ff0077;
+
 }
+
+/* Define styles for dark mode */
+.dark-mode {
+    --bg-color: #000;
+    /* Change background color to black for dark mode */
+    --textcolor: #fff;
+    /* Change text color to white for dark mode */
+    --second-bg-color: #323946;
+    --main-color: #ff0077;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -78,6 +95,52 @@ section{
     color: var(--textcolor);
     display: none;
 }
+
+
+/* Add styles for the theme switch */
+.theme-switch {
+    width: 100;
+    height: 50;
+    background: #323946;
+    appearance: none;
+    border-radius: 160px;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Style for moon icon */
+.theme-switch .fas.fa-moon {
+    font-size: 24px;
+    /* Adjust size as needed */
+    color: #000;
+    /* Adjust color as needed */
+}
+
+/* Style for sun icon */
+.theme-switch .fas.fa-sun {
+    font-size: 24px;
+    /* Adjust size as needed */
+    color: #fff;
+    /* Adjust color as needed */
+}
+
+/* Dark mode styles */
+.dark-mode .theme-switch .fas.fa-moon {
+    display: inline-block;
+    /* Show the moon icon in dark mode */
+}
+
+.dark-mode .theme-switch .fas.fa-sun {
+    display: none;
+    /* Hide the sun icon in dark mode */
+}
+
+
 .home{
     display: flex;
     justify-content: center;
