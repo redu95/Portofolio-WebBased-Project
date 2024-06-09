@@ -68,7 +68,7 @@ section{
     display: flex;
     background: var(--bg-color);
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
     z-index: 100;
     transition: background 0.3s, border-bottom 0.3s;
 }
@@ -108,8 +108,6 @@ section{
     align-items: center;
 }
 
-
-
 .switch {
     position: relative;
     display: inline-block;
@@ -133,11 +131,11 @@ section{
     transition: all 0.3s;
 }
 
-.checkbox:checked+.switch::after {
+body.dark-mode .switch::after {
     left: 25px;
 }
 
-.checkbox:checked+.switch {
+body.dark-mode .switch {
     background-color: var(--main-color);
 }
 
@@ -158,11 +156,11 @@ section{
     opacity: 0;
 }
 
-.checkbox:checked+.switch .fa-moon {
+body.dark-mode .switch .fa-moon {
     opacity: 0;
 }
 
-.checkbox:checked+.switch .fa-sun {
+body.dark-mode .switch .fa-sun {
     opacity: 1;
 }
 
