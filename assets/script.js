@@ -1,5 +1,5 @@
 /// Add an event listener to the theme switch
-document.getElementById('theme-switch').addEventListener('click', function() {
+document.getElementById('checkbox').addEventListener('click', function() {
   // Toggle dark mode class on the body
   document.body.classList.toggle('dark-mode');
 });
