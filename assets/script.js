@@ -66,3 +66,24 @@ const typed = new Typed('.multiple-text', {
     loop:true
 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+
+    contactForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Gather form data
+        const formData = new FormData(contactForm);
+        const email = formData.get('email');
+        const subject = formData.get('subject');
+        const message = formData.get('message');
+
+        // Construct the email body
+        const emailBody = `Subject: ${subject}%0D%0A%0D%0A${message}`;
+        const mailToLink = `mailto:redietmuluken95@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
+
+        // Open default email client with pre-filled fields
+        window.location.href = mailToLink;
+    });
+});
