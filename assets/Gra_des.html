@@ -1,21 +1,34 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <title>Graphic Design </title>
-
+    <title>Financial Consulting</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- box icons -->
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- custom css -->
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
 </head>
 
-<body>
-    <section class="about" id="about">
-        <div class="about-content">
+<body class="bodyf">
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Rediet.</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="../index.html" class="active">Back to Home</a>
+        </nav>
+    </header>
+    <!-- home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Mobile App Developer: </h1>
+            <br>
+            <br>
+            <br>
             <p>Mobile App Developer:
                 As a passionate mobile app developer, I specialize in creating dynamic, user-friendly applications using Flutter and
                 other languages. My expertise lies in crafting seamless, cross-platform solutions that provide a native-like
@@ -33,9 +46,22 @@
                 established business, I am dedicated to providing exceptional mobile solutions that drive engagement and success.
             </p>
         </div>
-
+        <div class="home_img_bg">
+            <div class="home-img">
+                <img src="../imges/home_img.png" alt="">
+            </div>
+        </div>
     </section>
-    
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- typed js -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- custom js -->
+    <script src="assets/script.js"></script>
 </body>
 
 </html>
+
