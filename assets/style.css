@@ -175,7 +175,7 @@ body.dark-mode .switch .fa-sun {
 .home-img img {
     display: block;
     max-width: 100%;
-    width: 100%;
+    width: 150%;
     height: auto;
     border-radius: 56% 44% 73% 27% / 45% 66% 32% 55%;
 }
@@ -186,10 +186,10 @@ body.dark-mode .switch .fa-sun {
     background: linear-gradient(45deg, #ff66cc, #9966ff);
     border-radius: 56% 44% 73% 27% / 45% 66% 32% 55%;
     transition: border-radius 500ms ease-in-out;
-    padding: 40px;
+    padding: 60px;
     margin: 20px;
-    width: 80%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 1000px;
 }
 .home_img_bg:hover{
     border-radius: 45% 66% 32% 55% / 56% 44% 73% 27%;
